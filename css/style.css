@@ -39,8 +39,8 @@ header {
 #about h2 {
     z-index: 1;
     position: absolute;
-    top: 24px;
-    right: 24px;
+    top: 10%;
+    right: 3%;
     color: #27252408;
     font-size: 20rem;
     font-weight: bold;
@@ -88,8 +88,8 @@ header {
 #motto h2 {
     z-index: 1;
     position: absolute;
-    top: 24px;
-    left: 24px;
+    top: 10%;
+    left: 3%;
     color: #27252408;
     font-size: 20rem;
     font-family: 'Josefin Sans', sans-serif;
@@ -142,12 +142,13 @@ header {
 
 #doing {
     position: relative;
+    overflow: hidden;
 }
 
 #doing h2 {
     position: absolute;
     top: -48px;
-    left: 24px;
+    left: 3%;
     color: #27252408;
     font-size: 20rem;
     font-weight: bold;
@@ -186,7 +187,6 @@ header {
     position: relative;
     z-index: 2;
     font-weight: bold;
-    font-family: 'Josefin Sans', sans-serif;
 }
 
 .doing-img-wrap, .doing-txt-wrap {
@@ -212,3 +212,116 @@ header {
     font-size: 16px;
 }
 
+#doing h4 {
+    position: relative;
+    z-index: 2;
+    font-weight: bold;
+}
+
+
+
+#works {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    height: 100vh;
+    padding: 0 10%;
+    position: relative;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+#works h2 {
+    z-index: 1;
+    position: absolute;
+    top: 5%;
+    right: 0;
+    color: #27252408;
+    font-size: 20rem;
+    font-weight: bold;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#works .works-title {
+    position: relative;
+    z-index: 2;
+    margin-bottom: 80px;
+}
+
+#works h3 {
+    z-index: 1;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.slider {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+
+.slick-slide img {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.mypattern{
+    width: 100%;
+}
+
+.mypattern .slick-slide{
+    margin: 5px;
+}
+
+.slider .slick-slide:not(.slick-center) {
+    -webkit-filter: blur(5px);
+    -moz-filter:blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+    transition: 0.2s linear;
+}
+
+.slick-prev:before, .slick-next:before {
+    color: #272524 !important;
+}
+
+.works-card {
+    display: flex;
+    background-color: #F5F4EF;
+    border-radius: 32px;
+    padding: 48px 40px;
+}
+
+.works-card h5 {
+    width: 100%;
+    margin-top: 24px;
+    font-size: 24px;
+}
+
+.works-card p {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 16px;
+    font-size: 20px;
+}
+
+#works .lang-icons {
+    width: 100%;
+    margin: 24px 0 0;
+    display: flex;
+}
+
+#works .lang-icons img {
+    margin: 0 0 0 8px;
+    width: 48px;
+}
+
+
+
+#member {
+    display: flex;
+    flex-direction: column;
+}
