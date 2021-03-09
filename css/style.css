@@ -5,7 +5,7 @@
     margin: 0;
 }
 
-h1, h2, h3, p {
+h1, h2, h3, h4, h5, p {
     color: #272524;
 }
 
@@ -29,6 +29,7 @@ header {
 
 
 #about {
+    overflow: hidden;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -36,7 +37,6 @@ header {
 }
 
 #about h2 {
-    overflow: hidden;
     z-index: 1;
     position: absolute;
     top: 24px;
@@ -78,6 +78,7 @@ header {
 
 
 #motto {
+    overflow: hidden;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -85,7 +86,6 @@ header {
 }
 
 #motto h2 {
-    overflow: hidden;
     z-index: 1;
     position: absolute;
     top: 24px;
@@ -139,4 +139,76 @@ header {
 }
 
 
+
+#doing {
+    position: relative;
+}
+
+#doing h2 {
+    position: absolute;
+    top: -48px;
+    left: 24px;
+    color: #27252408;
+    font-size: 20rem;
+    font-weight: bold;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#doing .band {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    height: calc(50% - 96px);
+    width: 100vw;
+    background-color: #fff;
+}
+
+#doing .doing-wrap {
+    position: relative;
+    padding-top: 112px;
+    margin: 48px 72px;
+    background-color: #fff;
+    height: calc(100% - 216px);
+    z-index: 2;
+    text-align: center;
+}
+
+#doing h3 {
+    position: relative;
+    z-index: 2;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#doing h4 {
+    position: relative;
+    z-index: 2;
+    font-weight: bold;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.doing-img-wrap, .doing-txt-wrap {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 24px 48px 0 48px;
+}
+
+.doing-img-wrap img,
+.doing-txt-wrap div {
+    width: 20%;
+}
+
+.doing-txt-wrap div h5 {
+    font-weight: 600;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 32px;
+    margin-bottom: 4px;
+}
+
+.doing-txt-wrap div p {
+    font-size: 16px;
+}
 
