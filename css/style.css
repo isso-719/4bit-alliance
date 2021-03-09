@@ -327,4 +327,48 @@ header {
 #member {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#member h2 {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0%;
+    color: #27252408;
+    font-size: 20rem;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#member h3 {
+    position: relative;
+    z-index: 2;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#member h4 {
+    position: relative;
+    z-index: 2;
+    font-weight: bold;
+}
+
+#member h5 {
+    margin-top: 24px;
+    position: relative;
+    z-index: 2;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+#member .member-wrap {
+    display: flex;
+}
+
+#member .member {
+    margin-top: 36px;
+    text-align: center;
 }
