@@ -1,4 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
 * {
     padding: 0;
     margin: 0;
 }
+
+h1, h2, h3, p {
+    color: #272524;
+}
+
+
+header {
+    height: 100vh;
+    width: 100%;
+}
+
+
+.main {
+    background-color: #F5F4EF;
+}
+
+.viewHeightSection {
+    height: calc(100vh - 72px);
+    width: calc(100% - 72px);
+    padding: 36px;
+}
+
+
+
+#about {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+
+#about h2 {
+    overflow: hidden;
+    z-index: 1;
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    color: #27252408;
+    font-size: 20rem;
+    font-weight: bold;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#about .about-content {
+    z-index: 2;
+}
+
+#about .left-box {
+    max-width: 574px;
+    width: 45%;
+}
+
+#about .left-box h3 {
+    font-size: 50px;
+    margin-bottom: 36px;
+}
+
+#about .left-box p {
+    font-size: 24px;
+}
+
+#about .right-box {
+    max-width: 45%;
+}
+
+#about .right-box img {
+    width: 100%;
+    object-fit: cover;
+    box-shadow: 3px 3px 24px #00000033;
+}
+
+
+
+#motto {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+
+#motto h2 {
+    overflow: hidden;
+    z-index: 1;
+    position: absolute;
+    top: 24px;
+    left: 24px;
+    color: #27252408;
+    font-size: 20rem;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#motto .motto-content {
+    z-index: 2;
+}
+
+#motto .left-box {
+    max-width: 45%;
+}
+
+#motto .left-box img {
+    width: 100%;
+    object-fit: cover;
+    box-shadow: 3px 3px 24px #00000033;
+}
+
+#motto .right-box {
+    max-width: 574px;
+    width: 45%;
+}
+
+#motto .right-box .motto-title {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 36px;
+}
+
+#motto .right-box h3 {
+    font-size: 50px;
+    font-weight: bold;
+    font-style: italic;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#motto .right-box small {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 16px;
+    margin-bottom: 10px;
+}
+
+#motto .right-box p {
+    font-size: 24px;
+}
+
+
+
