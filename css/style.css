@@ -166,8 +166,11 @@ header {
 }
 
 #doing .doing-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     position: relative;
-    padding-top: 112px;
+    padding: 72px;
     margin: 48px 72px;
     background-color: #fff;
     height: calc(100% - 216px);
