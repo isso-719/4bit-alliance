@@ -526,6 +526,22 @@ hr {
     margin: 8px 0;
 }
 
+#joinus a {
+    margin-top: 40px;
+}
+
+#joinus a img {
+    width: 356px;
+    border-radius: 72px;
+    box-shadow: 0 0 24px #00000033;
+}
+
+#joinus a img:hover {
+    width: 356px;
+    border-radius: 72px;
+    box-shadow: 0 0 24px #00000055;
+}
+
 footer {
     display: flex;
     justify-content: center;
