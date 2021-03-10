@@ -43,7 +43,7 @@ header {
 #about h2 {
     z-index: 1;
     position: absolute;
-    top: 10%;
+    top: 0;
     right: 3%;
     color: #27252408;
     font-size: 20rem;
@@ -93,11 +93,12 @@ header {
 #motto h2 {
     z-index: 1;
     position: absolute;
-    top: 10%;
+    top: 0;
     left: 3%;
     color: #27252408;
     font-size: 20rem;
     font-family: 'Josefin Sans', sans-serif;
+    overflow: hidden;
 }
 
 #motto .motto-content {
@@ -160,7 +161,7 @@ header {
     font-family: 'Josefin Sans', sans-serif;
 }
 
-#doing .band {
+.band {
     position: absolute;
     top: 50%;
     left: 0;
@@ -275,6 +276,7 @@ header {
 .slick-slide img {
     margin: 0 auto;
     width: 100%;
+    border-radius: 20px;
 }
 
 .mypattern{
@@ -288,11 +290,11 @@ header {
 }
 
 .slider .slick-slide:not(.slick-center) {
-    -webkit-filter: blur(3px);
-    -moz-filter:blur(3px);
-    -o-filter: blur(3px);
-    -ms-filter: blur(3px);
-    filter: blur(3px);
+    -webkit-filter: blur(1.5px);
+    -moz-filter:blur(1.5px);
+    -o-filter: blur(1.5px);
+    -ms-filter: blur(1.5px);
+    filter: blur(1.5px);
     transition: 0.2s linear;
 }
 
@@ -310,8 +312,10 @@ header {
 }
 
 .works-card {
-    display: flex;
+    display: flex !important;
+    flex-direction: column;
     background-color: #F5F4EF;
+    justify-content: space-between;
     border-radius: 32px;
     padding: 48px 40px;
 }
@@ -331,13 +335,15 @@ header {
 
 #works .lang-icons {
     width: 100%;
-    margin: 24px 0 0;
+    /* margin: 24px 0 0; */
     display: flex;
+    margin-top: auto;
 }
 
 #works .lang-icons img {
     margin: 0 0 0 8px;
     width: 48px;
+    border-radius: 0;
 }
 
 
@@ -349,6 +355,7 @@ header {
     align-items: center;
     position: relative;
     overflow: hidden;
+    padding: 112px 0 224px;
 }
 
 #member h2 {
@@ -395,4 +402,138 @@ header {
 
 #member .member img {
     width: 100%;
+}
+
+
+
+#joinus {
+    background-color: #EDEEF8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    padding: 112px 0 224px;
+}
+
+#joinus .joinus-title {
+    text-align: center;
+}
+
+#joinus h2 {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    right: 0%;
+    color: #27252408;
+    font-size: 20rem;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#joinus h3 {
+    position: relative;
+    z-index: 2;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#joinus h4 {
+    position: relative;
+    z-index: 2;
+    font-weight: bold;
+    text-align: center;
+}
+
+#joinus .joinus-title p {
+    font-size: 16px;
+    margin-top: 36px;
+}
+
+#joinus .joinus-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* position: relative; */
+    padding: 72px;
+    margin: 48px 72px 0;
+    background-color: #fff;
+    height: calc(100% - 216px);
+    z-index: 2;
+    text-align: center;
+}
+
+#joinus .benefit {
+    z-index: 2;
+    margin-bottom: 80px;
+}
+
+.joinus-content .band {
+    /* top: 20%; */
+    height: 500px;
+    transform: translateY(-50%);
+}
+
+#joinus .benefit h3 {
+    font-size: 36px;
+}
+
+#joinus .benefit h4 {
+    font-size: 12px;
+    margin-bottom: 40px;
+}
+
+.benefit-img-wrap, .benefit-txt-wrap {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 24px 48px 0 48px;
+}
+
+.benefit-img-wrap img,
+.benefit-txt-wrap div {
+    width: 20%;
+}
+
+.benefit-txt-wrap div h5 {
+    font-weight: 600;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 32px;
+    margin-bottom: 4px;
+}
+
+.benefit-txt-wrap div p {
+    font-size: 16px;
+}
+
+.joinus-detail {
+    text-align: left;
+    z-index: 2;
+    margin: 0 auto;
+    padding: 72px;
+    height: calc(100% - 216px);
+    background-color: #fff;
+}
+
+hr {
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    overflow: visible;
+    border-top: 2px dashed #707070;
+    margin: 8px 0;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #272524;
+    height: 64px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Josefin Sans', sans-serif;
 }
