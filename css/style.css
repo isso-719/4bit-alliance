@@ -24,15 +24,16 @@ header {
 }
 
 .viewHeightSection {
-    height: calc(100vh - 72px);
-    width: calc(100% - 72px);
-    padding: 36px;
+    /* height: calc(100vh - 72px); */
+    /* width: calc(100% - 72px); */
+    padding: 72px 0;
 }
 
 
 
 #about {
     overflow: hidden;
+    padding: 72px 0;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -83,6 +84,7 @@ header {
 #motto {
     overflow: hidden;
     display: flex;
+    padding: 72px 0;
     justify-content: space-around;
     align-items: center;
     position: relative;
@@ -231,8 +233,9 @@ header {
     flex-direction: column;
     justify-content: center;
     width: 80%;
-    height: 100vh;
-    padding: 0 10%;
+    /* padding: 72px 0; */
+    /* height: 100vh; */
+    padding: 112px 10%;
     position: relative;
     overflow: hidden;
     background-color: #fff;
@@ -266,6 +269,7 @@ header {
     position: relative;
     z-index: 2;
     text-align: center;
+    /* overflow: hidden; */
 }
 
 .slick-slide img {
@@ -274,11 +278,13 @@ header {
 }
 
 .mypattern{
-    width: 100%;
+    /* width: 80%; */
 }
 
 .mypattern .slick-slide{
     margin: 5px;
+    width: 348px;
+    height: 588px;
 }
 
 .slider .slick-slide:not(.slick-center) {
@@ -292,6 +298,15 @@ header {
 
 .slick-prev:before, .slick-next:before {
     color: #272524 !important;
+}
+
+.slick-prev
+{
+    left: -25px;
+}
+.slick-next
+{
+    right: -25px;
 }
 
 .works-card {
@@ -333,6 +348,7 @@ header {
     justify-content: center;
     align-items: center;
     position: relative;
+    overflow: hidden;
 }
 
 #member h2 {
@@ -369,9 +385,14 @@ header {
 
 #member .member-wrap {
     display: flex;
+    justify-content: space-around;
 }
 
 #member .member {
     margin-top: 36px;
     text-align: center;
+}
+
+#member .member img {
+    width: 100%;
 }
