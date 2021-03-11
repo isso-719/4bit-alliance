@@ -554,10 +554,12 @@ footer {
     font-family: 'Josefin Sans', sans-serif;
 }
 
+
+/* ここからモーダル */
 .modalArea {
     display: none;
     position: fixed;
-    z-index: 10; /*サイトによってここの数値は調整 */
+    z-index: 10;
     top: 0;
     left: 0;
     width: 100%;
@@ -621,10 +623,11 @@ footer {
     text-align: center;
     display: inline-block;
     width: 96px;
-    border: solid 1px #272524;
+    border: solid 1px #272524cc;
     border-radius: 16px;
     margin: 4px;
-    color: #272524;
+    padding: 2px 0;
+    color: #272524cc;
 }
 
 .closeModal {
