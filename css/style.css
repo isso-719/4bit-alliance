@@ -289,10 +289,6 @@ header {
     /* overflow: hidden; */
 }
 
-.slick-slide div {
-    /* margin:0 auto; */
-}
-
 .slick-track {
     margin: 0 auto;
 }
@@ -683,6 +679,14 @@ footer {
 
 
 /* ここからレスポンシブ */
+@media screen and (max-width: 1300px) {
+
+    .slick-slider {
+        width: 100%;
+    }
+
+}
+
 @media screen and (max-width: 1024px) {
 
     .doing-txt-wrap div h5 {
