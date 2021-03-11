@@ -29,6 +29,11 @@ header {
     padding: 72px 0;
 }
 
+.maxFullHD {
+    margin: 0 auto;
+    max-width: 1400px;
+}
+
 .sp-view {
     display: none;
 }
@@ -168,10 +173,10 @@ header {
 .band {
     position: absolute;
     top: 50%;
-    left: 0;
+    left: -50%;
     transform: translateY(-50%);
     height: calc(50% - 96px);
-    width: 100vw;
+    width: 20000px;
     background-color: #fff;
 }
 
@@ -181,7 +186,7 @@ header {
     justify-content: center;
     position: relative;
     padding: 72px;
-    margin: 48px 72px;
+    /* margin: 48px 72px; */
     background-color: #fff;
     height: calc(100% - 216px);
     z-index: 2;
@@ -237,7 +242,8 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 80%;
+    align-items: center;
+    /* max-width: 1400px; */
     /* padding: 72px 0; */
     /* height: 100vh; */
     padding: 112px 10%;
@@ -258,16 +264,22 @@ header {
 }
 
 #works .works-title {
+    text-align: center;
     position: relative;
     z-index: 2;
     margin-bottom: 80px;
 }
 
 #works h3 {
+    margin: 0;
     z-index: 1;
     font-size: 50px;
     font-weight: bold;
     font-family: 'Josefin Sans', sans-serif;
+}
+
+#works h4 {
+    margin: 0;
 }
 
 .slider {
@@ -277,10 +289,24 @@ header {
     /* overflow: hidden; */
 }
 
+.slick-slide div {
+    /* margin:0 auto; */
+}
+
+.slick-track {
+    margin: 0 auto;
+}
+
 .slick-slide img {
     margin: 0 auto;
     width: 100%;
     border-radius: 20px;
+}
+
+.slick-list {
+    max-width: 1200px;
+    padding: 0 !important;
+    margin: 0 auto;
 }
 
 .mypattern{
@@ -293,14 +319,14 @@ header {
     height: 588px;
 }
 
-.slider .slick-slide:not(.slick-center) {
+/* .slider .slick-slide:not(.slick-center) {
     -webkit-filter: blur(1.5px);
     -moz-filter:blur(1.5px);
     -o-filter: blur(1.5px);
     -ms-filter: blur(1.5px);
     filter: blur(1.5px);
     transition: 0.2s linear;
-}
+} */
 
 .slick-prev:before, .slick-next:before {
     color: #272524 !important;
@@ -406,9 +432,16 @@ header {
 }
 
 #member .member img {
-    width: 100%;
+    width: calc(100% - 32px);
+    margin: 16px;
+    border-radius: 50%;
+    transition: 0.2s;
+    box-shadow: 0 0 24px #00000033;
 }
 
+#member .member img:hover {
+    box-shadow: 0 0 24px #00000055;
+}
 
 
 #joinus {
@@ -538,6 +571,7 @@ hr {
     width: 356px;
     border-radius: 72px;
     box-shadow: 0 0 24px #00000033;
+    transition: 0.2s;
 }
 
 #joinus a img:hover {
