@@ -35,7 +35,7 @@ header {
 }
 
 .sp-view {
-    display: none;
+    display: none !important;
 }
 
 
@@ -305,9 +305,9 @@ header {
     margin: 0 auto;
 }
 
-.mypattern{
-    /* width: 80%; */
-}
+/* .mypattern{
+    width: 80%;
+} */
 
 .mypattern .slick-slide{
     margin: 5px;
@@ -328,12 +328,11 @@ header {
     color: #272524 !important;
 }
 
-.slick-prev
-{
+.slick-prev {
     left: -25px;
 }
-.slick-next
-{
+
+.slick-next {
     right: -25px;
 }
 
@@ -699,14 +698,27 @@ footer {
 
 }
 
+@media screen and (max-width: 826px) {
+
+    #motto .right-box .motto-title {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    #motto .right-box .motto-title small {
+        margin-left: 0;
+    }
+
+}
+
 @media screen and (max-width: 768px) {
 
     .sp-view {
-        display: block;
+        display: block !important;
     }
 
     .pc-view {
-        display: none;
+        display: none !important;
     }
 
     h2 {
@@ -717,6 +729,7 @@ footer {
     #motto {
         flex-direction: column;
         text-align: center;
+        max-width: 360px;
     }
 
     #about .left-box,
@@ -728,9 +741,118 @@ footer {
         margin-top: 72px;
     }
 
+    #about .left-box h3 {
+        font-size: 36px;
+    }
+
+    #about .left-box p,
+    #motto .right-box p {
+        font-size: 16px;
+    }
+
     #motto .right-box .motto-title {
+        align-items: center;
         justify-content: center;
         flex-wrap: wrap;
+    }
+
+    #doing .doing-img-wrap {
+        max-width: 360px;
+        margin: 0 auto;
+    }
+
+    #doing .doing-img-wrap div {
+        margin-bottom: 48px;
+    }
+
+    #doing .doing-img-wrap div img {
+        width: 100%;
+    }
+
+    #doing .doing-img-wrap div h5 {
+        font-weight: 600;
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 32px;
+        margin: 20px 0 4px;
+    }
+
+    .works-card h5 {
+        font-size: 24px;
+        /* margin-top: 10px; */
+    }
+
+    .works-card p {
+        font-size: 16px;
+        /* margin-top: 10px; */
+    }
+
+    .slick-slide img {
+        /* width: 100%; */
+        margin: 0;
+        object-fit: contain;
+    }
+
+    #works .lang-icons img {
+        height: 48px;
+        margin: 0 0 0 8px;
+    }
+
+    .mypattern .slick-slide{
+        /* width: 50vw; */
+        max-width: 215px;
+        max-height: 500px;
+    }
+
+    #member .member-wrap {
+        flex-direction: column;
+    }
+
+    #member .member {
+        margin-top: 48px;
+    }
+
+    #member h5 {
+        font-size: 28px;
+        margin-top: 8px;
+    }
+
+    #joinus {
+        padding: 112px 24px 224px;
+    }
+
+    .modalWrapper {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 100%;
+        height: 100vh;
+        /* max-height: 100%; */
+        max-width: 1024px;
+        /* padding: 10px 30px; */
+        background-color: #fff;
+        overflow: scroll;
+    }
+
+    .modalContents {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+        /* width: calc(100% - 72px); */
+        height: 100%;
+        padding: 32px 36px;
+    }
+
+    .modalContents .modal-left, .modalContents .modal-right {
+        width: auto;
+        text-align: center;
+    }
+
+    .closeModal {
+        position: relative;
+        right: 0;
+        top: 0;
     }
 
 }
