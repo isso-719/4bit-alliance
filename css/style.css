@@ -394,7 +394,7 @@ header {
     top: 0;
     left: 0%;
     color: #27252408;
-    font-size: 20rem;
+    font-size: 19rem;
     font-family: 'Josefin Sans', sans-serif;
 }
 
@@ -468,6 +468,7 @@ header {
     color: #27252408;
     font-size: 20rem;
     font-family: 'Josefin Sans', sans-serif;
+    white-space: nowrap;
 }
 
 #joinus h3 {
