@@ -441,6 +441,7 @@ header {
 
 #member .member img:hover {
     box-shadow: 0 0 24px #00000055;
+    cursor: pointer;
 }
 
 
@@ -578,6 +579,7 @@ hr {
     width: 356px;
     border-radius: 72px;
     box-shadow: 0 0 24px #00000055;
+    cursor: pointer;
 }
 
 footer {
