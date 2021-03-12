@@ -948,6 +948,11 @@ footer {
         display: none;
     }
 
+    header {
+        height: auto;
+        min-height: auto;
+    }
+
     header img {
         position: relative;
         height: auto;
