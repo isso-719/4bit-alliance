@@ -73,11 +73,23 @@ if (windowWidth <= windowSm) {
             topWindow = $(window).scrollTop();
         $('.fuwat').each(function(){
             var objectPosition = $(this).offset().top;
-            if(topWindow > objectPosition - windowHeight + 200){
+            if(topWindow > objectPosition - windowHeight + 150){
             $(this).addClass("fuwatAnime");
         }
         });
         });
     });
 }
+
+// スクロール
+$(window).on('scroll', function () {
+    var doch = $(document).innerHeight();
+    var winh = $(window).innerHeight();
+    var bottom = doch - winh;
+    if (bottom - 128 <= $(window).scrollTop()) {
+        $('#c-scrolldown').fadeOut();
+    } else {
+        $('#c-scrolldown').fadeIn();
+    }
+});
 

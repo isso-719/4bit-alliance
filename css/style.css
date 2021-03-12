@@ -17,6 +17,47 @@ a {
 }
 
 
+
+/* スクロールを促すやつ */
+#c-scrolldown {
+    width: 10px;
+    height: 115px;
+    position: fixed;
+    right: 20px;
+    bottom: 28px;
+    z-index: 5;
+}
+
+#c-scrolldown__inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: block;
+}
+
+#c-scrolldown-text {
+    font-size: 11px;
+    font-family: 'Josefin Sans', serif;
+    font-weight: 700;
+    transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    line-height: 1;
+    position: relative;
+    right: 2px;
+}
+
+#c-scrolldown-arrow {
+    width: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+
+
+/* ヘッダー */
 header {
     height: 100vh;
     width: 100%;
@@ -92,6 +133,7 @@ nav .nav-joinus a {
     background-color: #FF6544;
     padding: 20px 20px 16px;
     border-radius: 8px;
+    transition: 0.2s;
 }
 
 nav .nav-joinus a::after {
@@ -132,6 +174,8 @@ nav .nav-joinus a:hover {
 }
 
 
+
+/* メインコンテンツはここから */
 .main {
     background-color: #F5F4EF;
 }
