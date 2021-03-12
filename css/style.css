@@ -809,12 +809,28 @@ footer {
         font-size: 18px;
     }
 
+    .catchcopy-wrap h3 {
+        font-size: 100px;
+    }
+
 }
 
 @media screen and (max-width: 920px) {
 
     /* ヘッダーレスポンシブここにあり */
+    header {
+        min-height: 100vh;
+        height: auto;
+        padding: 0;
+    }
 
+    nav h1 {
+        font-size: 20px;
+    }
+
+    nav .nav-content {
+        margin: 0 8px;
+    }
 
 }
 
@@ -829,6 +845,17 @@ footer {
         margin-left: 0;
     }
 
+}
+
+@media screen and (max-height: 820px) {
+    .catchcopy-wrap h3 {
+        font-size: 100px;
+    }
+
+    .catchcopy-wrap p {
+        font-size: 36px;
+        padding: 10px 10px 0;
+    }
 }
 
 @media screen and (max-width: 768px) {
