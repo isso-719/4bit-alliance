@@ -1071,6 +1071,10 @@ footer {
         width: 256px;
     }
 
+    #joinus a img:hover {
+        width: 256px;
+    }
+
     .modalWrapper {
         position: absolute;
         top: 50%;
