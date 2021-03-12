@@ -961,6 +961,7 @@ footer {
 
     nav {
         height: 64px;
+        padding: 0;
     }
 
     nav a {
