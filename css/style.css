@@ -160,10 +160,12 @@ nav .nav-joinus a:hover {
     font-style: italic;
     font-family: 'Josefin Sans', sans-serif;
     margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
 }
 
 .catchcopy-wrap p {
-    display: inline;
+    display: inline-block;
     margin-bottom: 10px;
     padding: 20px 10px 0;
     background-color: #272524;
@@ -171,6 +173,28 @@ nav .nav-joinus a:hover {
     font-size: 56px;
     font-weight: bold;
     font-family: 'Josefin Sans', sans-serif;
+    overflow: hidden;
+    position: relative;
+}
+
+.catchcopy-wrap h3::before,
+.catchcopy-wrap p::before {
+    animation: catchcopy-wrap 2s cubic-bezier(.4, 0, .2, 1) forwards;
+    background: #F5F4EF;
+    bottom: 0;
+    content: '';
+    left: 0;
+    pointer-events: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+}
+
+@keyframes catchcopy-wrap {
+    100% {
+        transform: translateX(100%);
+    }
 }
 
 
@@ -855,6 +879,10 @@ footer {
 
     .catchcopy-wrap h3 {
         font-size: 100px;
+    }
+
+    .catchcopy-wrap p {
+        font-size: 36px;
     }
 
 }
