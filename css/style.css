@@ -948,6 +948,44 @@ footer {
         display: none;
     }
 
+    header img {
+        position: relative;
+        height: auto;
+        width: 100%;
+    }
+
+    nav {
+        height: 64px;
+    }
+
+    nav a {
+        margin: 0 auto;
+    }
+
+    nav h1 {
+        padding-top: 4px;
+        font-size: 32px;
+        line-height: 64px;
+    }
+
+    .catchcopy-wrap {
+        position: relative;
+        margin-top: 24px;
+        top: auto;
+        left: auto;
+        padding-left: 30px;
+    }
+
+    .catchcopy-wrap h3 {
+        display: inline-block;
+        padding: 15px 10px 0;
+    }
+
+    .catchcopy-wrap P {
+        display: inline-block;
+        padding: 5px 10px 0;
+    }
+
     #about,
     #motto {
         flex-direction: column;
@@ -1108,6 +1146,24 @@ footer {
         position: relative;
         right: 0;
         top: 0;
+    }
+
+}
+
+@media screen and (max-width: 530px) {
+
+    header {
+        height: auto;
+    }
+
+    .catchcopy-wrap h3 {
+        font-size: 48px;
+        margin-bottom: 8px;
+    }
+
+    .catchcopy-wrap p {
+        font-size: 16px;
+        margin-bottom: 8px;
     }
 
 }

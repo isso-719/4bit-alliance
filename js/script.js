@@ -92,4 +92,3 @@ $(window).on('scroll', function () {
         $('#c-scrolldown').fadeIn();
     }
 });
-
