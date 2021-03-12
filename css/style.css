@@ -8,6 +8,10 @@
     "Osaka", "MS PGothic", arial, sans-serif;
 }
 
+*:focus {
+    outline: none;
+}
+
 h1, h2, h3, h4, h5, h6, p {
     color: #272524;
 }
@@ -15,8 +19,6 @@ h1, h2, h3, h4, h5, h6, p {
 a {
     text-decoration: none;
 }
-
-
 
 /* スクロールを促すやつ */
 #c-scrolldown {
@@ -612,11 +614,11 @@ nav .nav-joinus a:hover {
     margin: 16px;
     border-radius: 50%;
     transition: 0.2s;
-    box-shadow: 0 0 24px #00000033;
+    box-shadow: 0 0 24px #00000044;
 }
 
 #member .member img:hover {
-    box-shadow: 0 0 24px #00000055;
+    box-shadow: 0 0 24px #00000095;
     cursor: pointer;
 }
 
@@ -748,14 +750,14 @@ hr {
 #joinus a img {
     width: 356px;
     border-radius: 72px;
-    box-shadow: 0 0 24px #00000033;
+    box-shadow: 0 0 24px #00000044;
     transition: 0.2s;
 }
 
 #joinus a img:hover {
     width: 356px;
     border-radius: 72px;
-    box-shadow: 0 0 24px #00000055;
+    box-shadow: 0 0 24px #00000095;
     cursor: pointer;
 }
 
