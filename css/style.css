@@ -618,7 +618,7 @@ nav .nav-joinus a:hover {
 }
 
 #member .member img:hover {
-    box-shadow: 0 0 24px #00000095;
+    box-shadow: 0 0 24px #00000090;
     cursor: pointer;
 }
 
@@ -757,7 +757,7 @@ hr {
 #joinus a img:hover {
     width: 356px;
     border-radius: 72px;
-    box-shadow: 0 0 24px #00000095;
+    box-shadow: 0 0 24px #00000080;
     cursor: pointer;
 }
 
